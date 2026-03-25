@@ -1,10 +1,14 @@
-with open('Coduingal.txt', 'w') as file:
-    file.write("Hi! I am a Penguin and I am 1yr old.")
-file.close()
-with open('Codingal.txt', 'r') as file:
-    data = file.readlines()
-    print("Words in this file are....")
-    for line in data:
-        word = line.split()
-        print (word)
+file = open("sample.txt", "r")
+content = file.read()
+print("First 10 characters:", content[:10])
+file.seek(0)
+print("First line:", file.readline().strip())
+file.seek(0)
+print("First 4 lines:")
+for i in range(4):
+    print(file.readline().strip())
+file.seek(0)
+print("\nAll lines:")
+for line in file:
+    print(line.strip())
 file.close()
