@@ -1,0 +1,11 @@
+file = open("myfile.txt", "r")
+content = file.read()
+print(content)
+file = open("myfile.txt", "w")
+file.write("Hello! I am Musa, The BEST IN THE WORLD.\n")
+file.close()
+file = open("myfile.txt", "a")
+file.write("My favourite subject is GAMING.\n")
+file.close()
+
+file.close()
